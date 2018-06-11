@@ -1,0 +1,31 @@
+{
+  "name": "challenge-frontend",
+  "version": "1.0.0",
+  "description": "Caya frontend challenge",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write 'app/**/*.{ts,tsx,json,md}'",
+    "clean": "rimraf .cache dist",
+    "prestart": "npm run clean",
+    "prebuild": "npm run clean",
+    "start": "parcel serve app/index.html",
+    "build": "parcel build app/index.html"
+  },
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "sdk": "./sdk"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.17",
+    "@types/react-dom": "^16.0.6",
+    "parcel-bundler": "^1.8.1",
+    "parcel-plugin-typescript": "^0.7.1",
+    "prettier": "^1.13.5",
+    "rimraf": "^2.6.2",
+    "tslint": "^5.10.0",
+    "tslint-config-prettier": "^1.13.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^2.9.1"
+  }
+}
